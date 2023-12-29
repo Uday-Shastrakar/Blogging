@@ -2,7 +2,7 @@
 <ul id="dropdown1" class="dropdown-content">
     {% for cat in cats %}
 
-    <li><a href="#!">{{cat.title}}</a></li>
+    <li><a href="/category/{{cat.url}}">{{cat.title}}</a></li>
 
     {%endfor%}
 </ul>
