@@ -1,5 +1,5 @@
 from blog.models import Post
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 
 # Create your views here.
@@ -14,6 +14,6 @@ def home(request):
 
 
 def posts(request, url):
-    post = Post.objects.filter(url=url)
-    print(post)
-    return render(request, 'posts.html', {})
+    post = Post.objects.get(url=url)
+    # print(post)
+    return render(request, 'posts.html', {'post': post})

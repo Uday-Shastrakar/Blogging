@@ -22,5 +22,5 @@ from .views import home, posts
 
 urlpatterns = [
     path('home/', home),
-    path('blog/<slug:url>', posts),
+    path('blog/<slug:url>/', posts),
 ]
