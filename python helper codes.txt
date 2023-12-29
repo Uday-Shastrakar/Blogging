@@ -1,0 +1,45 @@
+deactivate  # If the virtual environment is currently activated
+rm -rf venv  # Remove the existing virtual environment
+python -m venv venv  # Recreate the virtual environment
+
+//to activate environment
+.\venv\Scripts\activate  # For Windows
+
+//to install django
+pip install django
+
+//to install pillow
+pip install pillow 
+
+//to chack version 
+django-admin --version
+
+//to create django project
+django-admin startproject iblogs
+
+//TO RUN server
+python manage.py runserver
+
+//to create new app 
+python manage.py startapp appname
+
+//to create migration for db// to create db scripts ot query
+python manage.py makemigrations
+
+// to maigrate query to database 
+python manage.py migrate
+
+//to create super user in admin panel 
+python manage.py createsuperuser
+
+//to install tinymce
+pip install django-tinymce
+
+
+// to install material admin
+pip install django-material-admin
+
+
+
+
+
