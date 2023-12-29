@@ -11,3 +11,9 @@ def home(request):
         'posts': posts
     }
     return render(request, 'home.html', data)
+
+
+def posts(request, url):
+    post = Post.objects.filter(url=url)
+    print(post)
+    return render(request, 'posts.html', {})
